@@ -1,0 +1,146 @@
+.container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+/* Sección del título */
+.title_container,
+.lists_container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.title_container {
+  width: 51.5%;
+  background-color: rgba(56, 56, 56, 0.5);
+}
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hr {
+  width: 80%;
+}
+
+.description {
+  font-size: 16px;
+  padding: 0 20%;
+  text-align: justify;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2% 4%;
+  background: none;
+  border: none;
+  border-bottom: 3px gray solid;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Clase para el botón activo */
+.activeButton {
+  border-bottom: 3px goldenrod solid;
+}
+
+/* Transición para el ícono */
+.svg {
+  transition: transform 0.5s ease;
+}
+
+/* Clase aplicada al ícono cuando se rota */
+.rotate {
+  transform: rotate(180deg);
+}
+
+.text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 4%;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+/* Mostrar el contenido desplegado */
+.active {
+  display: flex;
+  padding: 5% 4%;
+  margin-top: 2%;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 300px; /* Valor suficientemente alto para el contenido */
+  opacity: 1;
+}
+
+/* ! BACKGROUND  */
+
+.background_container {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 100vh;
+  height: 100%;
+}
+
+.background {
+  object-fit: cover;
+}
+
+/* ! ICONS */
+
+.icons_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 2%;
+  background-color: goldenrod;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .background{
+    height: 99.99%;
+  }
+  .lists_container{
+    display: none;
+  }
+  .title_container {
+    width: 100%;
+  }
+}

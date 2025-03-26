@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Casa Castaño",
+    "resume": "Entendemos esta obra como una sucesión de áreas definidas que se ponen en relación con otras para que funciones un conjunto.\n Esto mismo intentamos desarrollar desde su impronta. La claridad volumétrica consiste en determinar estas áreas, darle una identidad formal y ponerlas en relación con otras áreas compuestas con la misma lógica.",
+    "description": "Un gran volumen a 6 x 22 metros trabado por un vacío y como resultado inmediato el manejo formal de la planta baja inyectándole sus funciones.\nEs interesante destacar que no solo estos tienen su propia condición y uso, sino que el hecho de ponerlos en relación arroja como resultado una serie de espacios e intersticios que vinculan a estos, los relaciona, les brindan cualidades particulares y terminan resolviendo áreas nuevas que casualmente resultan ser las más importantes del programa.\n Cuando hablamos de espacios intermedios o intersticios hablamos de, acceso, circulación horizontal y vertical, área publica de la casa (cocina, living, comedor) y galería de expansión.\n Sin dejar de destacar el elemento no constituido físicamente que resulta vital para q todos estos espacios y volúmenes se pongan en relación, que es el patio.\n Lugar q no demanda de una acción física para constituirse en sí mismo, pero articula los usos en horizontal y en vertical de toda la obra.\n Es así como podemos describir las lógicas compositivas y concluir que la ejecución física y formal de los espacios no es directamente proporcional a la importancia de los mismos.\n Resultan más importantes aquellos con los que menos materia cuentan.\n Entendiendo esto, solo queda destacar la importancia de encontrar un recorrido que vincule todos estos espacios y se vea alimentado por las cualidades que cada uno de ellos le entrega.\n Pudiendo así apreciar como cada uno de estos se ve afectado de manera diferente bajo la acción de la luz.\n A medida que se recorre la casa se pueden ir descubriendo espacios, encontrando visuales, proyecciones de luz y sombra y la vida que propone su funcionamiento.",
+    "datos": {
+      "Año_finalización_construcción": 2021,
+      "Superficie_construida": "310m2",
+      "Ubicación": "Tigre, Buenos Aires, Argentina",
+      "Fotografo": {
+        "name": "Gonzalo Viramonte",
+        "web": "",
+        "email": "arqgonzaloviramonte@hotmail.com"
+      },
+      "Créditos_adicionales": {
+        "Arquitectos_a_Cargo": [
+          "Arq. Nicolás Barrionuevo",
+          "Arq. Juan Villanueva"
+        ],
+        "Equipo_de_Diseño": [
+          "Arq. Nicolás Barrionuevo",
+          "Arq. Juan Villanueva"
+        ],
+        "Clientes": [
+          "Pose",
+          "Marceo",
+          "Espiga Christian",
+          "Trufelman",
+          "Alejandro"
+        ],
+        "Ingeniería": ["Ingeniero Moscatelli", "Andrés"]
+      }
+    },
+    "images": [
+      "/projects/castañoHouse/castaño01.jpg",
+      "/projects/castañoHouse/castaño02.jpg",
+      "/projects/castañoHouse/castaño03.jpg",
+      "/projects/castañoHouse/castaño04.jpg",
+      "/projects/castañoHouse/castaño05.jpg",
+      "/projects/castañoHouse/castaño06.jpg",
+      "/projects/castañoHouse/castaño07.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Obra Virazón",
+    "resume": "Tratamos de entender esta obra como una sucesión de áreas definidas que se ponen en relación con otras para que funciones un conjunto. Esto mismo intentamos desarrollar...",
+    "description": "Tratamos de entender esta obra como una sucesión de áreas definidas que se ponen en relación con otras para que funciones un conjunto. \n Esto mismo intentamos desarrollar desde su impronta. La claridad volumétrica consiste en determinar estas áreas, darle una identidad formal y ponerlas en relación con otras áreas compuestas con la misma lógica.\n De esta forma aparece un gran volumen a 3 metros de altura trabado por un vacío y como resultado inmediato el manejo formal de la planta baja inyectándole sus funciones.\n Es interesante destacar que no solo estos tienen su propia condición y uso, sino que el hecho de ponerlos en relación arroja como resultado una serie de espacios e intersticios que vinculan a estos, los relaciona, les brindan cualidades particulares y terminan resolviendo áreas nuevas que casualmente resultan ser las más importantes del programa. \n Cuando hablamos de espacios intermedios o intersticios hablamos de, acceso, circulación horizontal y vertical, área publica de la casa (cocina, living, comedor) y galería de expansión. \n Sin dejar de destacar el elemento no constituido físicamente que resulta vital para q todos estos espacios y volúmenes se pongan en relación; el patio. Lugar q no demanda de una acción física para constituirse en sí mismo, pero articula los usos en horizontal y en vertical de toda la obra. \n Es así como podemos describir las lógicas compositivas y concluir que la ejecución física y formal de los espacios no es directamente proporcional a la importancia de los mismos. Resultan más importantes aquellos con los que menos materia cuentan.\n Entendiendo esto, solo queda destacar la importancia de encontrar un recorrido que vincule todos estos espacios y se vea alimentado por las cualidades que cada uno de ellos le entrega. Pudiendo así apreciar como cada uno de estos se ve afectado de manera diferente bajo la acción de la luz.\n A medida que se recorre la casa se pueden ir descubriendo espacios, encontrando visuales, proyecciones de luz y sombra y la vida que propone su funcionamiento.",
+    "images": ["/projects/casaVizaron/01.png", "/projects/casaVizaron/02.png"]
+  }
+]

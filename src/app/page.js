@@ -1,95 +1,62 @@
-import Image from "next/image";
+"use client";
+import { useRef } from "react";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
+import LastProjects from "./components/lastProjects/lastProjects";
+import Presentation from "./components/presentation/presentation";
 import styles from "./page.module.css";
+import AboutUs from "./components/aboutUs/aboutUs";
+import WhatsApp_Button from "./components/whatsApp/whatsApp";
+import Contact_Form from "./components/contact/contact";
 
 export default function Home() {
+  const presentationRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // Función para la navegación de la navbar
+  const handleNavigate = (section) => {
+    switch (section) {
+      case "home":
+        scrollToSection(presentationRef);
+        break;
+      case "aboutUs":
+        scrollToSection(aboutRef);
+        break;
+      case "projects":
+        scrollToSection(projectsRef);
+        break;
+      case "contacto":
+        scrollToSection(contactRef);
+        break;
+      // Agrega más casos según las secciones que tengas
+      default:
+        break;
+    }
+  };
+
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Navbar onNavigate={handleNavigate} />
+      <div ref={presentationRef}>
+        <Presentation scrollToProjects={() => scrollToSection(aboutRef)} />
+      </div>
+      <div ref={aboutRef}>
+        <AboutUs />
+      </div>
+      <div ref={projectsRef}>
+        <LastProjects />
+      </div>
+      <div ref={contactRef}>
+        <Contact_Form />
+      </div>
+      <Footer />
+      <WhatsApp_Button />
     </div>
   );
 }
