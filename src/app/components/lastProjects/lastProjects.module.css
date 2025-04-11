@@ -22,6 +22,11 @@
   width: 100%;
 }
 
+.link {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
 .projects_container {
   height: 100%;
   display: flex;
@@ -36,7 +41,7 @@
   }
   .title_container {
     top: 41%;
-    padding:2% 30%;
+    padding: 2% 30%;
     background-color: rgba(60, 60, 60, 0.389);
   }
   .title {

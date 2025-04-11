@@ -18,7 +18,7 @@ const Presentation = ({ scrollToProjects }) => {
       <div className={s.title_container}>
         <div className={s.title_subcontainer}>
           <div className={s.title}>
-            <h2>BARRIONUEVO / VILLANUEVA ARQ</h2>
+            <h2>MUGNAINI ARQ</h2>
           </div>
           <div className={s.subtitle}>
             <p>DISEÑO</p>
@@ -28,10 +28,9 @@ const Presentation = ({ scrollToProjects }) => {
         </div>
         <div className={s.description_container}>
           <p className={s.description}>
-            Somos Barrionuevo Villanueva ARQ, un estudio con más de años de
-            trabajo. Para nosotros cada proyecto tiene que ser único y por eso
-            creemos que el compromiso y la confianza con nuestros clientes es
-            primero.
+            Soy Mugnaini ARQ, un estudio con más de años de trabajo. Para
+            nosotros cada proyecto tiene que ser único y por eso creemos que el
+            compromiso y la confianza con nuestros clientes es primero.
           </p>
         </div>
       </div>

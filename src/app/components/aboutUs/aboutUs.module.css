@@ -101,10 +101,13 @@
   z-index: -1;
   left: 0;
   top: 100vh;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .background {
+  width: 50%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -129,18 +132,16 @@
 }
 
 @media (max-width: 700px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .background{
-    height: 99.99%;
-  }
-  .lists_container{
-    display: none;
-  }
+  .background_container,
+  .background,
   .title_container {
     width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .lists_container {
+    display: none;
   }
 }

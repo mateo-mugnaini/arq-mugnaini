@@ -54,46 +54,45 @@ const Contact_Form = () => {
       <h3 className={s.title}>
         Si te gustó mi porfolio no dudes en contactarte conmigo
       </h3>
-      <form className={s.form} onSubmit={handleSubmit}>
-        <label>
-          Correo:
-          <input
-            type="email"
-            name="email"
-            value={formulario.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Mensaje:
-          <textarea
-            name="message"
-            value={formulario.message}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <button type="submit" disabled={loading}>
-          {loading ? (
-            <p className={s.button}>
-              Enviando...
-              <FaHourglassEnd size={20} className={s.spin} />
-            </p>
-          ) : (
-            <p className={s.button}>
-              Enviar
-              <LuSendHorizontal size={20} />
-            </p>
-          )}
-        </button>
-        {success === true && (
-          <p style={{ color: "green" }}>Mensaje enviado correctamente.</p>
-        )}
-        {success === false && (
-          <p style={{ color: "red" }}>Error al enviar el mensaje.</p>
-        )}
-      </form>
+      <div className={s.info_container}>
+        <form className={s.form} onSubmit={handleSubmit}>
+          <label>
+            Correo:
+            <input
+              type="email"
+              name="email"
+              value={formulario.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
+            Mensaje:
+            <textarea
+              name="message"
+              value={formulario.message}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <button type="submit" disabled={loading}>
+            {loading ? (
+              <p className={s.button}>
+                Enviando...
+                <FaHourglassEnd size={20} className={s.spin} />
+              </p>
+            ) : (
+              <p className={s.button}>
+                Enviar
+                <LuSendHorizontal size={20} />
+              </p>
+            )}
+          </button>
+        </form>
+        <div className={s.info}>
+          <h2>HOla</h2>
+        </div>
+      </div>
     </div>
   );
 };

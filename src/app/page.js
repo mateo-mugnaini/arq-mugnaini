@@ -1,6 +1,6 @@
 "use client";
-import { useRef } from "react";
-import Navbar from "./components/navbar/navbar";
+import { useRef, useState } from "react";
+import Navbar from "./components/presentation/navbar/navbar";
 import Footer from "./components/footer/footer";
 import LastProjects from "./components/lastProjects/lastProjects";
 import Presentation from "./components/presentation/presentation";
@@ -8,6 +8,7 @@ import styles from "./page.module.css";
 import AboutUs from "./components/aboutUs/aboutUs";
 import WhatsApp_Button from "./components/whatsApp/whatsApp";
 import Contact_Form from "./components/contact/contact";
+import PopUp from "./components/popUP/popUp";
 
 export default function Home() {
   const presentationRef = useRef(null);
@@ -17,6 +18,12 @@ export default function Home() {
 
   const scrollToSection = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const [showPopUp, setShowPopUp] = useState(true);
+
+  const handleClosePopUp = () => {
+    setShowPopUp(false);
   };
 
   // Función para la navegación de la navbar
@@ -57,6 +64,7 @@ export default function Home() {
       </div>
       <Footer />
       <WhatsApp_Button />
+      {showPopUp && <PopUp handleClosePopUp={handleClosePopUp} />}
     </div>
   );
 }

@@ -77,8 +77,23 @@
   .container {
     align-items: center;
     text-align: center;
-  } 
+  }
   .title_container {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    align-items: center;
+    text-align: center;
+  }
+  .title_container {
+    width: 100%;
+  }
+  .title{
+    font-size: 0.7rem;
+  }
+  .subtitle {
+    font-size:3rem;
   }
 }

@@ -8,20 +8,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
 }
 
-.title{
-    width: 80%;
-    margin: 5%;
-    text-align: center;
+.title {
+  width: 80%;
+  margin: 5%;
+  text-align: center;
+}
+.info_container {
+  width: 100%;
+  flex-direction: column-reverse;
 }
 
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+.info{
+  width: 45%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 /* Formulario centralizado con fondo ligeramente más claro */
 .form {
@@ -29,11 +36,9 @@
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  width: 80%;
-  min-width: 40%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-
 }
 
 /* Estilos para las etiquetas */
@@ -81,13 +86,16 @@
   background-color: darkgoldenrod;
 }
 
-
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(180deg); }
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .spin {
-    animation: spin 0.5s linear infinite;
+  100% {
+    transform: rotate(180deg);
   }
-  
+}
+
+.spin {
+  animation: spin 0.5s linear infinite;
+}
+

@@ -7,10 +7,11 @@ const Footer = () => {
     <footer className={s.footer_container}>
       <span className={s.devWeb}>
         <Link
+          target="_blank"
           title="Sitio Oficial"
-          href={"https://barrionuevovillanuevaarquitectos.com.ar/"}
+          href={"https://www.linkedin.com/in/mateo-mugnaini"}
         >
-          © Barrionuevo / Villanueva ARQ
+          © Mateo Mugnaini
         </Link>
       </span>
       <span className={s.devWeb}>

@@ -20,7 +20,7 @@ const AboutUs = () => {
           className={s.background}
           src={background}
           alt="background"
-          width={761}
+          width={71}
           height={729.5}
         />
       </div>
