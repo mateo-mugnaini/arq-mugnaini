@@ -89,9 +89,9 @@ const Contact_Form = () => {
             )}
           </button>
         </form>
-        <div className={s.info}>
+        {/* <div className={s.info}>
           <h2>HOla</h2>
-        </div>
+        </div> */}
       </div>
     </div>
   );
